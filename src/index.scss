@@ -1,0 +1,47 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.filter-container{
+    display: flex;
+    padding: 10px 50px;
+    flex-direction: column;
+    justify-content: center;    
+    background-color: #F1EFF1;
+    margin-bottom: 20px;
+   .button-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    button{
+        background-color: #D8D7D8;
+        border: none;
+        padding: 7px;
+        border-radius: 7px;
+    }
+    button:hover{
+        background-color: #B6B5B6;
+    }
+   }
+}
+
+.movie-container{
+    width: 80vh;
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+    border: 2px solid #DDDCDD;
+    th{
+        background-color: #DDDCDD;
+    }
+    td{
+        padding-top: 10px;
+    }
+    th,td{
+    border: 1px solid #DDDCDD;
+    }
+}

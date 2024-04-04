@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import GenreFilter from "./components/GenreFilter";
+import MovieList from "./components/MovieList";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <header>
+    <h1>Top 15 Movies of All Time</h1>
+  </header>
+       <GenreFilter />
+       <MovieList />
     </div>
   );
 }
